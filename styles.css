@@ -117,6 +117,32 @@ hr {
 
 /** header **/
 
+.anim-header {
+    color: var(--primary-color);
+    background-color: #0faca4;
+    display: inline-block;
+    transform: translateY(20%);
+    padding: 0.05rem 0.3rem;
+    overflow: hidden;
+    border-bottom-left-radius: 0.5rem;
+}
+
+
+.anim-header span {
+    transform: translateY(0);
+    display: inline-block;
+    animation-name: pagetitleanim;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;   
+    color: white ;
+}
+
+@keyframes pagetitleanim {
+    0% {transform: translateY(-100%);}
+    100% {transform: translateY(0);}
+}
+
+
 .title {
     color: white;
    /* background-color: var(--primary-color);
@@ -140,6 +166,7 @@ hr {
     transition: transform 0.3s ease-in;
     transform-origin: left;
     z-index: -1;
+    border-bottom-left-radius: 0.5rem;
 }
 
 .title:hover::after {
