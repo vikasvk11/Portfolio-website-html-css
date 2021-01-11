@@ -248,6 +248,10 @@ hr {
     transition: transform 0.1s ease-in;
 }
 
+.section-blogs a:hover {
+    color:#036d68;
+}
+
 @media (max-width: 500px) {
     .bar {
         display: none;
