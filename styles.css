@@ -1,16 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-:root {
+body {
     --primary-color: #0faca4;
     --dark-cyan: #709492;
     --off-white: #f1f1f1;
     --off-theme: #f5fdfc;
-}
-
-body {
+    --text-color: black;
+    --theme: white;
+    --shadow: rgb(190, 190, 190);
+    --title: white;
+    --footer-shadow: #ffffff9f;
+    background-color: white;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
+
+body.dark {
+    --primary-color: #0d6662;
+    --dark-cyan: #88b6b4;
+    --off-white: #131313;
+    --off-theme: #000000;
+    --text-color: white;
+    --theme: black;
+    --shadow: rgb(49, 49, 49);
+    --title: black;
+    --footer-shadow: #00000010;
+    background-color: black;
+}
+
 
 hr {
     margin: 2rem 0rem;
@@ -109,6 +126,8 @@ hr {
 
 .navigation .nav-brand {
     font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .navigation .link-active {
@@ -134,7 +153,7 @@ hr {
     animation-name: pagetitleanim;
     animation-duration: 2s;
     animation-fill-mode: forwards;   
-    color: white ;
+    color: var(--title) ;
 }
 
 @keyframes pagetitleanim {
@@ -144,7 +163,7 @@ hr {
 
 
 .title {
-    color: rgb(255, 255, 255);
+    color: var(--title);
     background-color: var(--primary-color);
     padding: 0rem 1rem;
     position: relative;
@@ -158,7 +177,7 @@ hr {
     max-width: 200px;
     display: block;
     margin: auto;  
-    box-shadow: 4px 4px 15px 0.5px rgb(190, 190, 190); 
+    box-shadow: 4px 4px 15px 0.5px var(--shadow); 
     border-radius: 50%;
 }
 
@@ -184,8 +203,22 @@ hr {
 
 /** sections **/
 
+section > div > h1 , p {
+    color: var(--text-color);
+}
+
+ol > li > h2, small {
+    color: var(--text-color);
+}
+
+ol > li {
+    color: var(--text-color);
+}
+
+
 .section {
     padding: 2rem;
+    background-color: var(--theme);
 }
 
 .section-anim {
@@ -252,25 +285,25 @@ hr {
 .github:hover {
     fill:black;
     transition: fill 0.4s ease-out;
-    filter: drop-shadow(0px 0px 3px #ffffff9f);
+    filter: drop-shadow(0px 0px 3px var(--footer-shadow));
 }
 
 .linkedin:hover {
     fill:#0e76a8;
     transition: fill 0.4s ease-out;
-    filter: drop-shadow(0px 0px 3px #ffffff9f);
+    filter: drop-shadow(0px 0px 3px var(--footer-shadow));
 }
 
 .instagram:hover {
     fill: #bc2a8d;
     transition: fill 0.4s ease-out;
-    filter: drop-shadow(0px 0px 3px #ffffff9f);
+    filter: drop-shadow(0px 0px 3px var(--footer-shadow));
 }
 
 .twitter:hover {
     fill:#00acee;
     transition: fill 0.4s ease-out;
-    filter: drop-shadow(0px 0px 3px #ffffff9f);
+    filter: drop-shadow(0px 0px 3px var(--footer-shadow));
 }
 
 .section-blogs a:hover {
