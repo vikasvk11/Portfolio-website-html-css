@@ -311,7 +311,12 @@ ol > li {
 }
 
 @media (max-width: 500px) {
-    
+
+    .navigation .list-non-bullet {
+        text-align: center;
+        padding: 0;
+    }
+
     .bar {
         display: none;
     }
