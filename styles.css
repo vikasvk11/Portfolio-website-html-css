@@ -311,12 +311,13 @@ ol > li {
 }
 
 @media (max-width: 500px) {
+    
     .bar {
         display: none;
     }
 
     .title {
-        color: rgb(255, 255, 255);
+        color: var(--title);
         background-color: var(--primary-color);
         margin: 0 auto;
         text-align: center;
