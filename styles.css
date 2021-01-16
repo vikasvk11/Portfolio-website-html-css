@@ -241,11 +241,36 @@ hr {
 .global-nav__logo {
     transform: scale(1,1);
     transition: transform 0.3s ease-out;
+    fill: white;
 }
 
 .global-nav__logo:hover {
     transform: scale(1.1,1.1);
     transition: transform 0.1s ease-in;
+}
+
+.github:hover {
+    fill:black;
+    transition: fill 0.4s ease-out;
+    filter: drop-shadow(0px 0px 3px #ffffff9f);
+}
+
+.linkedin:hover {
+    fill:#0e76a8;
+    transition: fill 0.4s ease-out;
+    filter: drop-shadow(0px 0px 3px #ffffff9f);
+}
+
+.instagram:hover {
+    fill: #bc2a8d;
+    transition: fill 0.4s ease-out;
+    filter: drop-shadow(0px 0px 3px #ffffff9f);
+}
+
+.twitter:hover {
+    fill:#00acee;
+    transition: fill 0.4s ease-out;
+    filter: drop-shadow(0px 0px 3px #ffffff9f);
 }
 
 .section-blogs a:hover {
