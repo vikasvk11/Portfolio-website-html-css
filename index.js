@@ -1,5 +1,12 @@
+/*
+var btn = document.querySelector('.nav-brand');
 
-document.documentElement.classList.add('color-theme-in-transition');
+function clickHandler() {
+    document.body.classList.toggle('dark');
+}
+
+btn.addEventListener("click", clickHandler);
+*/
 
 let darkModevar = localStorage.getItem("darkMode");
 const btn = document.querySelector(".nav-brand");

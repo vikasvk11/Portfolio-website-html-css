@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-html.color-theme-in-transition,
-html.color-theme-in-transition *,
-html.color-theme-in-transition *:before,
-html.color-theme-in-transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
+
+* {
+    transition: 0.5s;
 }
 
 body {
@@ -21,7 +18,6 @@ body {
     background-color: white;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
-
 }
 
 body.dark {
