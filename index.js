@@ -1,12 +1,5 @@
-/*
-var btn = document.querySelector('.nav-brand');
 
-function clickHandler() {
-    document.body.classList.toggle('dark');
-}
-
-btn.addEventListener("click", clickHandler);
-*/
+document.documentElement.classList.add('color-theme-in-transition');
 
 let darkModevar = localStorage.getItem("darkMode");
 const btn = document.querySelector(".nav-brand");
