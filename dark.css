@@ -1,17 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 
+
 body {
-    --primary-color: #0faca4;
-    --dark-cyan: #709492;
-    --off-white: #f1f1f1;
-    --off-theme: #f5fdfc;
-    --text-color: black;
-    --theme: white;
-    --shadow: rgb(190, 190, 190);
-    --title: white;
-    --footer-shadow: #ffffff9f;
-    background-color: white;
+    --primary-color: #0d6662;
+    --dark-cyan: #88b6b4;
+    --off-white: #131313;
+    --off-theme: #000000;
+    --text-color: white;
+    --theme: black;
+    --shadow: rgb(49, 49, 49);
+    --title: black;
+    --footer-shadow: #00000010;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     transition: 0.5s;
