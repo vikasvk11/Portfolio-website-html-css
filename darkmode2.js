@@ -9,7 +9,7 @@ function enableDarkMode() {
 }
 
 function disableDarkMode() {
-    style.href = 'styles.css'
+    style.href = 'light.css'
     localStorage.setItem("darkMode", null);
 }
 

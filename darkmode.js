@@ -7,7 +7,7 @@ function enableDarkMode() {
 }
 
 function disableDarkMode() {
-    style1.href = 'styles.css'
+    style1.href = 'light.css'
     localStorage.setItem("darkMode", null);
 }
 
