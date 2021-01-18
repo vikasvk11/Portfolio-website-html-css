@@ -14,7 +14,7 @@ function disableDarkMode() {
 }
 
 if(darkModevar === 'enabled') {
-    enableDarkMode();
+    //enableDarkMode();
 } else {
     disableDarkMode();
 }

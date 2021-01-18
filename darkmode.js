@@ -4,7 +4,6 @@ let style1 = document.getElementById('mystylesheet');
 function enableDarkMode() {
     style1.href = 'dark.css'
     localStorage.setItem("darkMode", "enabled");
-  
 }
 
 function disableDarkMode() {
@@ -13,7 +12,7 @@ function disableDarkMode() {
 }
 
 if(darkModevar1 === 'enabled') {
-    enableDarkMode();
+    //enableDarkMode();
 } else {
     disableDarkMode();
 }
